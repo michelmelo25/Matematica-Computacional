@@ -48,7 +48,7 @@ int main()
     int k = 0; // acredito que seja o numero de interações
     double xa = 0; // X anterior
     double xk = calcxk(intrmin, intrmax, fun, n);
-
+    cout << k << " " << intrmin << " " << intrmax << " " << xk << " " << func(xk, fun, n) << endl;
     while (((fabs(xk - xa) >= epslon) || (fabs(func(xk, fun, n)) >= epslon)) && k <= maxintera) {
         cout << intrmin << endl;
         cout << intrmax << endl;
@@ -60,7 +60,7 @@ int main()
         xa = xk;
         xk = calcxk(intrmin, intrmax, fun, n);
         k++;
-        cout << k-1 << " " << intrmin << " " << intrmax << " " << xk << " " << func(xk, fun, n) << endl;
+        cout << k << " " << intrmin << " " << intrmax << " " << xk << " " << func(xk, fun, n) << endl;
         //return xk;
     }
     return 0;
