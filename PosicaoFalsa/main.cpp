@@ -60,7 +60,7 @@ int main()
         xa = xk;
         xk = calcxk(intrmin, intrmax, fun, n);
         k++;
-        cout << k-1 << "| " << intrmin << " " << intrmax << " " << xk << " " << func(xk, fun, n) << endl;
+        cout << k-1 << " " << intrmin << " " << intrmax << " " << xk << " " << func(xk, fun, n) << endl;
         //return xk;
     }
     return 0;
