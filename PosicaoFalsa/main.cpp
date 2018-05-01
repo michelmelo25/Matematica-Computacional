@@ -45,7 +45,7 @@ int main()
     cin >> epslon;
     cin >> maxintera;
 
-    int k = 0; // acredito que seja o numero de interações
+    int k = 0; // numero de interações
     double xa = 0; // X anterior
     double xk = calcxk(intrmin, intrmax, fun, n);
     cout << k << " " << intrmin << " " << intrmax << " " << xk << " " << func(xk, fun, n) << endl;
